@@ -11,7 +11,7 @@ import {
 
 const ComfyUIGenerator = () => {
   const [prompt, setPrompt] = useState('');
-  const [generatedImage, setGeneratedImage] = useState<string | null>(null);
+  const [generatedImage] = useState<string | null>(null);
 
   const handleGenerate = async () => {
     // TODO: Implement ComfyUI integration
@@ -30,11 +30,11 @@ const ComfyUIGenerator = () => {
             <Grid item xs={12}>
               <TextField
                 fullWidth
-                multiline
-                rows={4}
                 label="Enter your prompt"
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
+                multiline
+                rows={4}
               />
             </Grid>
             <Grid item xs={12}>
@@ -42,7 +42,7 @@ const ComfyUIGenerator = () => {
                 variant="contained"
                 color="primary"
                 onClick={handleGenerate}
-                disabled={!prompt}
+                fullWidth
               >
                 Generate Image
               </Button>
@@ -55,7 +55,7 @@ const ComfyUIGenerator = () => {
             <img
               src={generatedImage}
               alt="Generated"
-              style={{ maxWidth: '100%', height: 'auto' }}
+              style={{ width: '100%', height: 'auto' }}
             />
           </Paper>
         )}

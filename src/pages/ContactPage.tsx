@@ -1,5 +1,4 @@
 import { Container, Typography, Box, Paper, Grid, TextField, Button } from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';

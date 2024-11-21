@@ -146,7 +146,7 @@ const ProductsPage = () => {
   const navigate = useNavigate();
   const [category, setCategory] = useState('all');
 
-  const handleCategoryChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleCategoryChange = (newValue: string) => {
     setCategory(newValue);
   };
 

@@ -1,4 +1,4 @@
-import { Container, Typography, Box, Grid, Paper, Button, Card, CardContent, CardMedia } from '@mui/material';
+import { Container, Typography, Box, Grid, Paper, Button, Card, CardContent } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import ComputerIcon from '@mui/icons-material/Computer';
 import BuildIcon from '@mui/icons-material/Build';
